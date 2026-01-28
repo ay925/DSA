@@ -56,7 +56,3 @@ for j in q:
         print(0,end=" ")
     else:
         print(hash_list[Index],end=" ")
-
-
-
-    
