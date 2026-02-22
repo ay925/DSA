@@ -22,6 +22,8 @@ last_smaller=float("-inf")
 langest=0
 for i in range(n):
     num=nums[i]
+    if num==last_smaller:
+        continue
     if num-1 == last_smaller:
         count+=1
         last_smaller=num
