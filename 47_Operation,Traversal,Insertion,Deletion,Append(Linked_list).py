@@ -13,3 +13,14 @@ node2.next=node3
 node3.next=node4
 
 print(node1.next.next.val)
+
+
+class SinglyLinkedList:
+    def __init__(self):
+        self.head=None
+    def append(self,val):
+        newNode=Node(val)
+        if self.head==None:
+            self.head=newNode
+        else:
+            pass
