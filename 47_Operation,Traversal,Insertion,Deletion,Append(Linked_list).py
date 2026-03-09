@@ -23,4 +23,8 @@ class SinglyLinkedList:
         if self.head==None:
             self.head=newNode
         else:
-            pass
+            curr=self.head
+            while(curr.next is not None):
+                curr=curr.next
+            curr.next=newNode
+
