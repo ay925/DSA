@@ -36,6 +36,17 @@ class SinglyLinkedList:
                 print(curr.val,end=" ")
                 curr=curr.next
 
+    def insert(self,val,position):
+        new_node=Node(val)
+        if position==0:
+            new_node.next=self.head
+            self.head=new_node
+        else:
+            current=self.head
+            prev_node=None
+            count=0
+            
+
 sll=SinglyLinkedList()
 sll.append(5)
 sll.append(10)
